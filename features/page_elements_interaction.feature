@@ -20,3 +20,7 @@ Feature: Interaction with groups of elements
     When I navigate to the home page
     Then I can wait a variable time for elements to appear
     Then I can wait a variable time and pass specific parameters
+
+  Scenario: Find element within elements with text
+    When I navigate to the home page
+    Then I can get the desire element based on text

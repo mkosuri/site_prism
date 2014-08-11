@@ -15,6 +15,10 @@ module SitePrism
         define_method collection_name.to_s do |*runtime_args|
           find_all(*find_args, *runtime_args)
         end
+
+        define_method "find_#{collection_name}_with_text" do
+          elements =find_all(*find_args, *runtime_args)
+        end
       end
     end
     alias_method :collection, :elements
